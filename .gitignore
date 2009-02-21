@@ -1,0 +1,16 @@
+Stories.iml
+stories.launch
+stories.tmproj
+.idea
+.classpath
+.settings
+.project
+web-app/WEB-INF/classes
+web-app/WEB-INF/lib
+web-app/WEB-INF/grails-app
+web-app/WEB-INF/spring
+test/classes
+test/reports
+staging
+logs
+stacktrace.log
