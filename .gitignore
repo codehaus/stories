@@ -7,3 +7,7 @@ test/reports
 staging
 logs
 stacktrace.log
+.idea
+Stories.iml
+stories.launch
+stories.tmproj
