@@ -1,8 +1,11 @@
 dataSource {
-	pooled = true
-	driverClassName = "org.hsqldb.jdbcDriver"
-	username = "sa"
-	password = ""
+	pooled = false
+    dbCreate = "create-drop" // one of 'create', 'create-drop','update'
+    url = "jdbc:postgresql://localhost:5432/stories"
+    driverClassName = "org.postgresql.Driver"
+    dialect = org.hibernate.dialect.PostgreSQLDialect
+    username = "grails"
+    password = "java4ever"
 }
 hibernate {
     cache.use_second_level_cache=true
@@ -13,8 +16,8 @@ hibernate {
 environments {
 	development {
 		dataSource {
-			dbCreate = "create-drop" // one of 'create', 'create-drop','update'
-			url = "jdbc:hsqldb:mem:devDB"
+			dbCreate = "none" // one of 'create', 'create-drop','update'
+			url = "jdbc:postgresql://localhost:5432/stories_dev"
 		}
 	}
 	test {
