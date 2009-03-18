@@ -1,6 +1,5 @@
 dataSource {
 	pooled = false
-    dbCreate = "create-drop" // one of 'create', 'create-drop','update'
     url = "jdbc:postgresql://localhost:5432/stories"
     driverClassName = "org.postgresql.Driver"
     dialect = org.hibernate.dialect.PostgreSQLDialect
@@ -16,19 +15,16 @@ hibernate {
 environments {
 	development {
 		dataSource {
-			dbCreate = "none" // one of 'create', 'create-drop','update'
 			url = "jdbc:postgresql://localhost:5432/stories_dev"
 		}
 	}
 	test {
 		dataSource {
-			dbCreate = "update"
 			url = "jdbc:hsqldb:mem:testDb"
 		}
 	}
 	production {
 		dataSource {
-			dbCreate = "update"
 			url = "jdbc:hsqldb:file:prodDb;shutdown=true"
 		}
 	}
