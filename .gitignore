@@ -8,7 +8,9 @@ staging
 logs
 stacktrace.log
 .idea
-Stories.iml
+*.iml
+*.ipr
+*.iws
 stories.launch
 stories.tmproj
 stories-test.launch
